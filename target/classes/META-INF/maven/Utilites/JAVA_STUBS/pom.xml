@@ -1,0 +1,102 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Utilites</groupId>
+  <artifactId>JAVA_STUBS</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <description>This project consists different utilites which I have created</description>
+  
+  <properties>
+  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  <maven.compiler.source>1.8</maven.compiler.source>
+  <maven.comiler.target>1.8</maven.comiler.target>
+  </properties>
+  
+  <dependencies>
+  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+  <!-- https://mvnrepository.com/artifact/com.ibm/dhbcore -->
+  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.141.5</version>
+</dependency>
+  
+<dependency>
+    <groupId>com.ibm</groupId>
+    <artifactId>dhbcore</artifactId>
+    <version>7.1.0.3</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.ibm.mq/com.ibm.mq.allclient -->
+<dependency>
+    <groupId>com.ibm.mq</groupId>
+    <artifactId>com.ibm.mq.allclient</artifactId>
+    <version>9.0.4.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.ibm/com.ibm.mq.commonservices -->
+<dependency>
+    <groupId>com.ibm</groupId>
+    <artifactId>com.ibm.mq.commonservices</artifactId>
+    <version>7.0.1.3</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.ibm/com.ibm.mq -->
+<dependency>
+    <groupId>com.ibm</groupId>
+    <artifactId>com.ibm.mq</artifactId>
+    <version>5.3.07</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.ibm/com.ibm.mq.jmqi -->
+<dependency>
+    <groupId>com.ibm</groupId>
+    <artifactId>com.ibm.mq.jmqi</artifactId>
+    <version>7.1.0.3</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.ibm/com.ibm.mqjms -->
+<dependency>
+    <groupId>com.ibm</groupId>
+    <artifactId>com.ibm.mqjms</artifactId>
+    <version>5.3.07</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.ibm.mq/headers -->
+<dependency>
+    <groupId>com.ibm.mq</groupId>
+    <artifactId>headers</artifactId>
+    <version>7.5</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/javax.resource/connector -->
+<dependency>
+    <groupId>javax.resource</groupId>
+    <artifactId>connector</artifactId>
+    <version>1.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/javax.jms/javax.jms-api -->
+<dependency>
+    <groupId>javax.jms</groupId>
+    <artifactId>javax.jms-api</artifactId>
+    <version>2.0.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/javax.transaction/javax.transaction-api -->
+<dependency>
+    <groupId>javax.transaction</groupId>
+    <artifactId>javax.transaction-api</artifactId>
+    <version>1.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.felix/org.osgi.foundation -->
+<dependency>
+    <groupId>org.apache.felix</groupId>
+    <artifactId>org.osgi.foundation</artifactId>
+    <version>1.2.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.sun.xml.ws/rt -->
+<dependency>
+    <groupId>com.sun.xml.ws</groupId>
+    <artifactId>rt</artifactId>
+    <version>2.3.2</version>
+</dependency>
+
+
+  
+</dependencies>
+</project>
