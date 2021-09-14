@@ -82,12 +82,12 @@ public class FCL_STUB {
 			String ref=strmsg.substring(strmsg.indexOf("<SourceSystemReference>")+23,strmsg.indexOf("</SourceSystemReference>"));
 		    String Acc1= strmsg.substring(strmsg.indexOf("<AccountngSystem>")+18,strmsg.indexOf("</AccountngSystem>"));
 	        String out="<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
-	        		+"<FundsControlResp><VersionId>1.0</VersionId>"
+	        		+"<FCLRESP><VersionId>1.0</VersionId>"
 	        		+"<Reference>"+ref+"</Reference>"
 	        		+"<Name>"+Name+"</Name>"
 	        		+"<ID>12334</ID>"
 	        		+"<Acc>"+Acc1+"</Acc>"
-	        		+"<Status>00</Status></FundsControlResp>";
+	        		+"<Status>00</Status></FCLRESP>";
 	       
 	        System.out.println("response is--"+out);
 	        Message message=session.createTextMessage(out);
