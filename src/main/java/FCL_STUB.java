@@ -28,7 +28,7 @@ public class FCL_STUB {
 	String InputQueue="MLP.FSS.MN";
 	String OutputQueue="MK.ASD.FG";
 	
-	String Rename_Tag="SourceSystemUniqueId";
+	String Rename_Tag="anytag";
 	String Folder_Path="C:\\Stubs\\FCL";
 	
 	MQQueueConnectionFactory cf= new MQQueueConnectionFactory();
@@ -78,16 +78,16 @@ public class FCL_STUB {
 				break;
 			}
 			
-			//Response processign part
-			String Local_Ref=strmsg.substring(strmsg.indexOf("<SourceSystemReference>")+23,strmsg.indexOf("</SourceSystemReference>"));
-		    String AccountingSystem= strmsg.substring(strmsg.indexOf("<AccountngSystem>")+18,strmsg.indexOf("</AccountngSystem>"));
+			//Response processing part
+			String ref=strmsg.substring(strmsg.indexOf("<SourceSystemReference>")+23,strmsg.indexOf("</SourceSystemReference>"));
+		    String Acc1= strmsg.substring(strmsg.indexOf("<AccountngSystem>")+18,strmsg.indexOf("</AccountngSystem>"));
 	        String out="<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
 	        		+"<FundsControlResp><VersionId>1.0</VersionId>"
-	        		+"<SourceSystemReference>"+Local_Ref+"</SourceSystemReference>"
-	        		+"<SourceSystemuniqueid>"+Name+"</SourceSystemuniqueid>"
-	        		+"<EarmarkRef>12334</EarmarkRef>"
-	        		+"<EarmarkSystemId>"+AccountingSystem+"</EarmarkSystemId>"
-	        		+"<StatusInd>06</StatusInd></FundsControlResp>";
+	        		+"<Reference>"+ref+"</Reference>"
+	        		+"<Name>"+Name+"</Name>"
+	        		+"<ID>12334</ID>"
+	        		+"<Acc>"+Acc1+"</Acc>"
+	        		+"<Status>00</Status></FundsControlResp>";
 	       
 	        System.out.println("response is--"+out);
 	        Message message=session.createTextMessage(out);
