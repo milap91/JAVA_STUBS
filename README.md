@@ -1,6 +1,6 @@
 This project consists of JAVA_STUBS which can be used to provide xml responses to any xml requests.
 -This is a JAVA based project
--I have created 3 sample stubs
+- I have created 3 sample stubs
 - The main usage of this project is to read XML messages from the input queue and store them in your local 
 system and provide the xml responses to those XML requests
 -User has to provide their project-specific  below MQ details:
