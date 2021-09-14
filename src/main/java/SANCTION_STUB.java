@@ -27,7 +27,7 @@ public class SANCTION_STUB {
 		String InputQueue="MLP.FSS.MN";
 		String OutputQueue="MK.ASD.FG";
 		
-		String Rename_Tag="MsgId";
+		String Rename_Tag="anytag";
 		String Folder_Path="C:\\Stubs\\Sanction";
 		
 		MQQueueConnectionFactory cf= new MQQueueConnectionFactory();
@@ -78,12 +78,12 @@ public class SANCTION_STUB {
 				}
 				
 				//Response processign part
-				String Mid=strmsg.substring(strmsg.indexOf("<MsgId>")+7,strmsg.indexOf("</MsgId>"));
+				String tag123=strmsg.substring(strmsg.indexOf("<MsgId>")+7,strmsg.indexOf("</MsgId>"));
 			   
 		        String out="<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
-		        		+"<Document><SanctionResponse><RequestMessageRef>"
-		        		+"<SourceSystemReference>"+Mid+"</SourceSystemReference>"
-		        		+"</SanctionResponse></Document>";
+		        		+"<Document><sanction><RequestMessageRef>"
+		        		+"<SourceSystemReference>"+tag123+"</SourceSystemReference>"
+		        		+"</sanction></Document>";
 		       
 		        System.out.println("response is--"+out);
 		        Message message=session.createTextMessage(out);
